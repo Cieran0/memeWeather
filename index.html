@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <title>Meme Gen</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="demo"></p>
-    <img id="img" src="" alt="Loading image"/>
+    <div id="options">
+        <h1>Meme Weather</h1>
+        <form>
+            <input type="text" name="lat" id="lat" placeholder="Latitude">
+            <br>
+            <input type="text" name="long" id="long" placeholder="Longitude">
+            <br>
+            <div id="buttons">
+                <input type="button" class="button" value="My Location" onclick="loadLocation()">
+                <input type="button" class="button" value="Run" onclick="run()">
+            </div>
+        </form>
+    </div>
+    <div id="imgDiv">
+        <img id="img" src="" alt="Click run to generate image"/>
+    </div>
 </body>
 </html>

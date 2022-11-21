@@ -1,0 +1,35 @@
+#options {
+    display: block;
+    width: auto;
+    float: left;
+    margin-right: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#lat,#long{
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 7px;
+    font-size: 18pt;
+}
+
+.button {
+    width: 45%;
+    margin-left: 4%;
+    font-size: 16pt;
+}
+
+#imgDiv {
+    display: block;
+    width: auto;
+    float: left;
+    
+}
+
+img {
+    height: 300px;
+}
