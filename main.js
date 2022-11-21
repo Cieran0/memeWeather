@@ -16,7 +16,7 @@ function readLocation() {
 }
 
 function run() {
-    document.getElementById("img").alt = "Loading image";
+    document.getElementById("img").alt = "Loading image...";
     readLocation();
     let address = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"+ lat +"%2C" + long + "?unitGroup=uk&key=GXNC3Q45BZ22QAS9HW2UEFEBC&contentType=json"
     fetch(address)
