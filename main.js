@@ -52,6 +52,8 @@ function run() {
 function getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(setPosition);
+    } else {
+        alert("Error: cannot get location!");
     }
 }
   
