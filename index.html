@@ -11,12 +11,17 @@
     <div id="options">
         <h1>Meme Weather</h1>
         <form>
-            <input type="text" name="lat" id="lat" placeholder="Latitude">
+            <div id="locDiv">
+                <input type="text" name="loc" id="loc" placeholder="Location">
+                <input type="button" class="loc" value="Coords" onclick="getCoordsFromLocation()">
+            </div>
             <br>
-            <input type="text" name="long" id="long" placeholder="Longitude">
+            <input type="text" name="lat" id="lat" placeholder="Latitude" readonly>
+            <br>
+            <input type="text" name="long" id="long" placeholder="Longitude" readonly>
             <br>
             <div id="buttons">
-                <input type="button" class="button" value="My Location" onclick="loadLocation()">
+                <input type="button" class="button" value="My Location" onclick="LoadLocation()">
                 <input type="button" class="button" value="Run" onclick="run()">
             </div>
         </form>
