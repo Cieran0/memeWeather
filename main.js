@@ -36,6 +36,7 @@ function getCoordsFromLocation() {
 }
 
 function run() {
+    document.getElementById("img").src = "https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif";
     readLocation();
     if(lat.length < 1 || long.length < 1) {
         alert("Coordinates are empty");
